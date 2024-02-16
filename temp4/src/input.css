@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Guerrilla&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.t a {
+  @apply flex gap-2 py-2 px-7  items-center;
+}
+
+.tog:focus+.t{
+  left: 0px ;
+  opacity: 1;
+}
+.tog:focus svg {
+  @apply md:rotate-180;
+}
+.t{
+  @apply md:p-3 md:rounded-lg md:border-AlmostBlack md:border-2
+}
+
+
+a {
+  @apply text-MediumGray font-500 transition-all;
+  &:hover,
+  &:focus {
+    @apply text-black;
+  }
+  &.btn:hover,
+  &.btn:focus {
+    @apply border-black;
+  }
+  
+}
+.nav{
+  right: -300px
+}
+
+.svg{
+  @apply rotate-180;
+}
